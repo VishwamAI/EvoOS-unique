@@ -1,0 +1,60 @@
+# AIOS Setup and Usage Guide
+
+## Introduction to AIOS
+AIOS (Artificial Intelligence Operating System) is a customized operating system built on Ubuntu 22.04 LTS with integrated AI functionalities. It automates tasks based on given prompts, including opening the terminal, performing web searches, and more. AIOS is designed to be an advanced and precise system that can understand and complete tasks based on single English command lines.
+
+## Installation Instructions
+1. **Download the AIOS ISO File:**
+   - Ensure you have the `aios.iso` file available. If not, download it from the provided source.
+
+2. **Create a Bootable USB Drive:**
+   - Use a tool like `Rufus` (Windows) or `Etcher` (Linux/Mac) to create a bootable USB drive with the `aios.iso` file.
+
+3. **Boot from the USB Drive:**
+   - Insert the bootable USB drive into your computer and restart it.
+   - Enter the BIOS/UEFI settings (usually by pressing a key like F2, F12, DEL, or ESC during startup) and set the USB drive as the primary boot device.
+   - Save the changes and exit the BIOS/UEFI settings. Your computer should now boot from the USB drive.
+
+4. **Install AIOS:**
+   - Follow the on-screen instructions to install AIOS on your computer. The installation process is similar to that of Ubuntu 22.04 LTS.
+
+## Getting Started with AIOS
+1. **Log In:**
+   - After installation, log in to your AIOS system using the credentials you created during the installation process.
+
+2. **Explore the AIOS Desktop:**
+   - The AIOS desktop environment is based on GNOME, with custom branding and features. Take some time to explore the desktop and familiarize yourself with the layout.
+
+## Using the AIOS Task Automation Features
+1. **Task Automation Script:**
+   - The `aios_task_automation.sh` script is located in the `/home/ubuntu` directory. This script uses an NLP model to interpret and execute English command lines.
+
+2. **Running the Script:**
+   - Open a terminal and navigate to the `/home/ubuntu` directory.
+   - Grant execute permissions to the script (if not already done) using the command:
+     ```bash
+     chmod +x aios_task_automation.sh
+     ```
+   - Execute the script using the command:
+     ```bash
+     ./aios_task_automation.sh
+     ```
+
+3. **Interpreting Commands:**
+   - The script uses the `vexparser` library's `NaiveBayesClassifier` to interpret commands. You can issue commands in plain English, and the script will execute the corresponding actions.
+
+4. **Example Commands:**
+   - "Open the terminal"
+   - "Search for AIOS documentation"
+   - "Show system information"
+
+## Troubleshooting and Support
+1. **Common Issues:**
+   - If you encounter any issues during installation or usage, refer to the official AIOS documentation and support forums for assistance.
+
+2. **Contact Support:**
+   - For further support, contact the AIOS support team via the provided contact information.
+
+---
+
+This guide provides an overview of the setup and usage of AIOS. For more detailed information and advanced usage, refer to the official AIOS documentation.

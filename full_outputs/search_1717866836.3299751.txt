@@ -1,0 +1,1462 @@
+/home/ubuntu/linux/Documentation/fb/lxfb.rst
+54-
+55:Andres Salomon <dilinger@debian.org>
+
+/home/ubuntu/linux/Documentation/fb/gxfb.rst
+53-
+54:Andres Salomon <dilinger@debian.org>
+
+/home/ubuntu/linux/Documentation/firmware-guide/acpi/gpio-properties.rst
+187-
+188:  root@debian:~# gpioinfo gpiochip4
+189-  gpiochip4 - 16 lines:
+--
+205-          line  15:      unnamed       unused   input  active-high
+206:  root@debian:~# gpiofind pin_4_push_button
+207-  gpiochip4 5
+208:  root@debian:~#
+209-
+
+/home/ubuntu/linux/Documentation/driver-api/media/drivers/contributors.rst
+25-
+26:- Michael Holzt <kju@debian.org>
+27-
+
+/home/ubuntu/linux/Documentation/driver-api/driver-model/overview.rst
+97-
+98:or something similar in the /lib/init/fstab file on Debian-based systems::
+99-
+
+/home/ubuntu/linux/Documentation/driver-api/mtd/spi-intel.rst
+31- 2) Install mtd-utils package [2]. We need this in order to erase the SPI
+32:    serial flash. Distros like Debian and Fedora have this prepackaged with
+33-    name "mtd-utils".
+
+/home/ubuntu/linux/Documentation/hwmon/dell-smm-hwmon.rst
+7-
+8::Copyright: |copy| 2002-2005 Massimo Dal Zotto <dz@debian.org>
+9::Copyright: |copy| 2019 Giovanni Mascellani <gio@debian.org>
+10-
+
+/home/ubuntu/linux/Documentation/dev-tools/coccinelle.rst
+26-
+27: - Debian
+28- - Fedora
+
+/home/ubuntu/linux/Documentation/power/apm-acpi.rst
+33-  =====  =======================================
+34:  apmd   http://ftp.debian.org/pool/main/a/apmd/
+35-  acpid  http://acpid.sf.net/
+
+/home/ubuntu/linux/Documentation/process/embargoed-hardware-issues.rst
+265-  Canonical	John Johansen <john.johansen@canonical.com>
+266:  Debian	Ben Hutchings <ben@decadent.org.uk>
+267-  Oracle	Konrad Rzeszutek Wilk <konrad.wilk@oracle.com>
+
+/home/ubuntu/linux/Documentation/process/handling-regressions.rst
+723-
+724:       > Now this got me wondering if Debian _unstable_ actually qualifies as a
+725-       > standard distro userspace.
+--
+727-       Oh, if the kernel breaks some standard user space, that counts. Tons
+728:       of people run Debian unstable
+729-
+
+/home/ubuntu/linux/Documentation/cdrom/cdrom-standard.rst
+6-:Date: 12 March 1999
+7::Updated by: Erik Andersen (andersee@debian.org)
+8-:Updated by: Jens Axboe (axboe@image.dk)
+--
+594-
+595:A software package `setcd`, available from the Debian distribution
+596-and `sunsite.unc.edu`, allows user level control of these flags.
+
+/home/ubuntu/linux/Documentation/bpf/s390.rst
+22-
+23:Debian supports installing compiler and libraries for s390 out of the box.
+24:Users of other distros may use debootstrap in order to set up a Debian chroot::
+25-
+--
+35-
+36:Once on Debian, the build prerequisites can be installed as follows::
+37-
+--
+198-
+199:- `Debootstrap <https://wiki.debian.org/EmDebian/CrossDebootstrap>`_
+200:- `Multiarch <https://wiki.debian.org/Multiarch/HOWTO>`_
+201-- `Building LLVM <https://llvm.org/docs/CMake.html>`_
+
+/home/ubuntu/linux/Documentation/admin-guide/laptops/laptop-mode.rst
+40-To configure laptop mode, you need to edit the configuration file, which is
+41:located in /etc/default/laptop-mode on Debian-based systems, or in
+42-/etc/sysconfig/laptop-mode on other systems.
+--
+108-The laptop mode configuration file is located in /etc/default/laptop-mode on
+109:Debian-based systems, or in /etc/sysconfig/laptop-mode on other systems. It
+110-contains the following options:
+--
+223-
+224:It should be installed as /etc/default/laptop-mode on Debian, and as
+225-/etc/sysconfig/laptop-mode on Red Hat, SUSE, Mandrake, and other work-alikes.
+--
+332-  if [ -f /etc/default/laptop-mode ] ; then
+333:	# Debian
+334-	. /etc/default/laptop-mode
+--
+740-          if [ -f /etc/default/laptop-mode ] ; then
+741:                  # Debian
+742-                  . /etc/default/laptop-mode
+
+/home/ubuntu/linux/Documentation/admin-guide/media/si470x.rst
+60-
+61:Testing is usually done with most application under Debian/testing:
+62-
+
+/home/ubuntu/linux/Documentation/admin-guide/verify-bugs-and-bisect-regressions.rst
+76-    # * Hint: at this point you might want to adjust the build configuration;
+77:    #   you'll have to, if you are running Debian.
+78-    make olddefconfig
+--
+508-
+509:  * Are you running Debian? Then you want to avoid known problems by performing
+510-    additional adjustments explained in the reference section.
+--
+1239-
+1240:* Debian, Ubuntu, and derivatives::
+1241-
+--
+1535-
+1536:**Debian:**
+1537-
+--
+1543-  Alternatively, download the needed certificate and make that configuration
+1544:  option point to it, as `the Debian handbook explains in more detail
+1545:  <https://debian-handbook.info/browse/stable/sect.kernel-compilation.html>`_
+1546-  -- or generate your own, as explained in
+
+/home/ubuntu/linux/Documentation/admin-guide/reporting-issues.rst
+311-small modifications to a kernel based on a recent Linux version; that for
+312:example often holds true for the mainline kernels shipped by Debian GNU/Linux
+313-Sid or Fedora Rawhide. Some developers will also accept reports about issues
+
+/home/ubuntu/linux/Documentation/admin-guide/java.rst
+47-   Of course you have to fix the path names. The path/file names given in this
+48:   document match the Debian 2.1 system. (i.e. jdk installed in ``/usr``,
+49-   custom wrappers from this document in ``/usr/local``)
+
+/home/ubuntu/linux/Documentation/admin-guide/workload-tracing.rst
+77-install other tools that aren’t usually included to build Linux kernel.
+78:Please note that the following works on Debian based distributions. You
+79-might have to find equivalent packages on other Linux distributions.
+
+/home/ubuntu/linux/Documentation/admin-guide/quickly-build-trimmed-linux.rst
+32-    # Hint: at this point you might want to adjust the build configuration; you'll
+33:    #   have to, if you are running Debian. See below for details.
+34-    make -j $(nproc --all)
+--
+240-
+241:  * Are you running Debian? Then to avoid known problems by performing
+242-    additional adjustments explained in the reference section.
+--
+433-
+434: * Debian, Ubuntu, and derivatives::
+435-
+--
+836-
+837:**Debian:**
+838-
+--
+844-   Alternatively, download the needed certificate and make that configuration
+845:   option point to it, as `the Debian handbook explains in more detail
+846:   <https://debian-handbook.info/browse/stable/sect.kernel-compilation.html>`_
+847-   -- or generate your own, as explained in
+
+/home/ubuntu/linux/Documentation/translations/zh_CN/process/embargoed-hardware-issues.rst
+186-  Canonical	John Johansen <john.johansen@canonical.com>
+187:  Debian	Ben Hutchings <ben@decadent.org.uk>
+188-  Oracle	Konrad Rzeszutek Wilk <konrad.wilk@oracle.com>
+
+/home/ubuntu/linux/Documentation/translations/zh_CN/admin-guide/reporting-issues.rst
+239-的问题报告。他们是否这么做很大程度上取决于开发人员和相关问题。如果发行版只
+240:根据最近的Linux版本对内核进行了较小修改，那么机会就比较大；例如对于Debian
+241-GNU/Linux Sid或Fedora Rawhide所提供的主线内核。一些开发人员还将接受基于最新
+
+/home/ubuntu/linux/Documentation/translations/zh_CN/cpu-freq/core.rst
+19-	- Dominik Brodowski  <linux@brodo.de>
+20:	- David Kimdon <dwhedon@debian.org>
+21-	- Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+
+/home/ubuntu/linux/Documentation/translations/sp_SP/process/embargoed-hardware-issues.rst
+282-  Canonical	John Johansen <john.johansen@canonical.com>
+283:  Debian	Ben Hutchings <ben@decadent.org.uk>
+284-  Oracle	Konrad Rzeszutek Wilk <konrad.wilk@oracle.com>
+
+/home/ubuntu/linux/Documentation/translations/sp_SP/process/handling-regressions.rst
+738-
+739:       > Ahora esto me ha dejado preguntandome si Debian _inestable_
+740-       realmente califica
+--
+743-       Oh, si el kernel rompe algún espacio de usuario estándar, eso cuenta.
+744:       Muchísima gente usa Debian inestable.
+745-
+
+/home/ubuntu/linux/Documentation/translations/zh_TW/admin-guide/reporting-issues.rst
+240-的問題報告。他們是否這麼做很大程度上取決於開發人員和相關問題。如果發行版只
+241:根據最近的Linux版本對內核進行了較小修改，那麼機會就比較大；例如對於Debian
+242-GNU/Linux Sid或Fedora Rawhide所提供的主線內核。一些開發人員還將接受基於最新
+
+/home/ubuntu/linux/Documentation/translations/zh_TW/process/embargoed-hardware-issues.rst
+189-  Canonical	John Johansen <john.johansen@canonical.com>
+190:  Debian	Ben Hutchings <ben@decadent.org.uk>
+191-  Oracle	Konrad Rzeszutek Wilk <konrad.wilk@oracle.com>
+
+/home/ubuntu/linux/Documentation/translations/zh_TW/cpu-freq/core.rst
+19-	- Dominik Brodowski  <linux@brodo.de>
+20:	- David Kimdon <dwhedon@debian.org>
+21-	- Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+
+/home/ubuntu/linux/Documentation/devicetree/bindings/writing-schema.rst
+151-Note that 'dtschema' installation requires 'swig' and Python development files
+152:installed first. On Debian/Ubuntu systems::
+153-
+
+/home/ubuntu/linux/Documentation/ABI/testing/sysfs-platform-ideapad-laptop
+23-KernelVersion:	4.13
+24:Contact:	"Ritesh Raj Sarraf <rrs@debian.org>"
+25-Description:
+
+/home/ubuntu/linux/Documentation/i2c/i2c-sysfs.rst
+256-`i2cdetect -l
+257:<https://manpages.debian.org/unstable/i2c-tools/i2cdetect.8.en.html>`_
+258-in
+
+/home/ubuntu/linux/Documentation/scsi/ChangeLog.arcmsr
+11-** 1.20.00.02   12/09/2004       Erich Chen     bug fix with over 2T bytes RAID Volume
+12:** 1.20.00.04    1/09/2005       Erich Chen     fits for Debian linux kernel version 2.2.xx
+13-** 1.20.00.05    2/20/2005       Erich Chen     cleanly as look like a Linux driver at 2.6.x
+
+/home/ubuntu/linux/Documentation/cpu-freq/core.rst
+8-	- Dominik Brodowski  <linux@brodo.de>
+9:	- David Kimdon <dwhedon@debian.org>
+10-	- Rafael J. Wysocki <rafael.j.wysocki@intel.com>
+
+/home/ubuntu/linux/Documentation/kbuild/kbuild.rst
+149-the UTS_MACHINE variable, and on some architectures also the kernel config.
+150:The value of KBUILD_DEBARCH is assumed (not checked) to be a valid Debian
+151-architecture.
+
+/home/ubuntu/linux/Documentation/networking/netconsole.rst
+15-
+16:Release prepend support by Breno Leitao <leitao@debian.org>, Jul 7 2023
+17-
+
+/home/ubuntu/linux/Documentation/networking/device_drivers/cable/sb1000.rst
+137-   interface.  It looks like I'm connected but I can't even ping any
+138:   numerical IP addresses.  (This happens predominantly on Debian systems due
+139-   to a default boot-time configuration script.)
+
+/home/ubuntu/linux/Documentation/networking/net_failover.rst
+98-Below is the patch snippet used with 'cloud-ifupdown-helper' script found on
+99:Debian cloud images:
+100-
+
+/home/ubuntu/linux/Documentation/networking/bonding.rst
+1650-This section applies to distros which use /etc/network/interfaces file
+1651:to describe network interface configuration, most notably Debian and its
+1652-derivatives.
+1653-
+1654:The ifup and ifdown commands on Debian don't support bonding out of
+1655-the box. The ifenslave-2.6 package should be installed to provide bonding
+
+/home/ubuntu/linux/Documentation/virt/uml/user_mode_linux_howto_v2.rst
+98-
+99:This is extremely easy on Debian - you can do it using debootstrap. It is
+100-also easy on OpenWRT - the build process can build UML images. All other
+--
+125-
+126:   # debootstrap buster /mnt http://deb.debian.org/debian
+127-
+--
+172-packages come with a set of modules which should be copied to the target
+173:filesystem. The location is distribution dependent. For Debian these
+174-reside under /usr/lib/uml/modules. Copy recursively the content of this
+--
+383-
+384:Example host configuration for Debian:
+385-
+--
+738-If you specify a unique machine id on the UML command line, i.e.
+739:``umid=debian``, you'll see this::
+740-
+741:   mconsole initialized on /home/jdike/.uml/debian/mconsole
+742-
+--
+746-
+747:   # uml_mconsole debian
+748-
+--
+750-
+751:   # uml_mconsole /home/jdike/.uml/debian/mconsole
+752-
+--
+807-
+808:   (mconsole) config ubd3=/home/jdike/incoming/roots/root_fs_debian22
+809-
+--
+902-
+903:   ubd0=root_fs_cow,root_fs_debian_22
+904-
+905:where ``root_fs_cow`` is the private COW file and ``root_fs_debian_22`` is
+906-the existing shared filesystem.  The COW file need not exist.  If it
+
+/home/ubuntu/linux/Documentation/filesystems/path-lookup.txt
+340-The following table gives rcu lookup statistics for a few simple workloads
+341:(2s12c24t Westmere, debian non-graphical system). Ungraceful are attempts to
+342-drop rcu that fail due to d_seq failure and requiring the entire path lookup
+
+/home/ubuntu/linux/tools/net/ynl/ynl-gen-rst.py
+7-
+8:    :copyright:  Copyright (C) 2023  Breno Leitao <leitao@debian.org>
+9-    :license:    GPL Version 2, June 1991 see linux/COPYING for details.
+
+/home/ubuntu/linux/tools/testing/kunit/test_data/test_is_test_passed-no_tests_run_no_header.log
+7-Adding 24743936 bytes to physical memory to account for exec-shield gap
+8:[Omitted long matching line]
+9-Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 14038
+
+/home/ubuntu/linux/tools/testing/kunit/test_data/test_output_isolated_correctly.log
+1:[Omitted long matching line]
+2-Built 1 zonelists, mobility grouping on.  Total pages: 69906
+
+/home/ubuntu/linux/tools/testing/selftests/x86/Makefile
+87-	echo "environment.  This will reduce test coverage of 64-bit" 2>&1; \
+88:	echo "kernels.  If you are using a Debian-like distribution," 2>&1; \
+89-	echo "try:"; 2>&1; \
+
+/home/ubuntu/linux/tools/testing/selftests/x86/unwind_vdso.c
+161-		/*
+162:		 * The most likely cause of this is that you're on Debian or
+163:		 * a Debian-based distro, you're missing libc6-i686, and you're
+164-		 * affected by libc/19006 (https://sourceware.org/PR19006).
+
+/home/ubuntu/linux/tools/testing/selftests/powerpc/ptrace/ptrace-syscall.c
+8- * test, and it was adapted to run on Powerpc by
+9: * Breno Leitao <leitao@debian.org>
+10- */
+
+/home/ubuntu/linux/tools/testing/selftests/mm/hugetlb_madv_vs_map.c
+17- *
+18: *  Author: Breno Leitao <leitao@debian.org>
+19- */
+
+/home/ubuntu/linux/tools/testing/selftests/mm/Makefile
+168-	echo  "environment. This will reduce test coverage of 64-bit" 2>&1;	\
+169:	echo  "kernels. If you are using a Debian-like distribution," 2>&1;	\
+170-	echo  "try:"; 2>&1;							\
+
+/home/ubuntu/linux/tools/lib/bpf/libbpf.c
+11664-	/*
+11665:	 * Based on https://packages.debian.org/sid/libc6.
+11666-	 *
+
+/home/ubuntu/linux/tools/lib/bpf/libbpf_probes.c
+52-
+53:/* On Debian LINUX_VERSION_CODE doesn't correspond to info.release.
+54- * Instead, it is provided in info.version. An example content of
+55: * Debian 10 looks like the below.
+56- *
+57- *   utsname::release   4.19.0-22-amd64
+58: *   utsname::version   #1 SMP Debian 4.19.260-1 (2022-09-29)
+59- *
+--
+62- */
+63:static __u32 get_debian_kernel_version(struct utsname *info)
+64-{
+--
+67-
+68:	p = strstr(info->version, "Debian ");
+69-	if (!p) {
+70:		/* This is not a Debian kernel. */
+71-		return 0;
+--
+73-
+74:	if (sscanf(p, "Debian %u.%u.%u", &major, &minor, &patch) != 3)
+75-		return 0;
+--
+91-
+92:	/* Check if this is a Debian kernel. */
+93:	version = get_debian_kernel_version(&info);
+94-	if (version != 0)
+
+/home/ubuntu/linux/CREDITS
+214-N: Paul Bame
+215:E: bame@debian.org
+216-E: bame@puffin.external.hp.com
+--
+720-N: Randolph Chung
+721:E: tausq@debian.org
+722-D: Linux/PA-RISC hacker
+--
+839-N: Massimo Dal Zotto
+840:E: dz@debian.org
+841-D: i8k Dell laptop SMM driver
+--
+853-P: 1024/672D05C1 DD 60 32 60 F7 90 64 80  E7 6F D4 E4 F8 C9 4A 58
+854:D: Debian GNU/Linux: www.debian.org maintainer, FAQ co-maintainer,
+855-D: packages testing, nit-picking & fixing. Enjoying BugFree (TM) kernels.
+--
+1392-N: Masanori GOTO
+1393:E: gotom@debian.or.jp
+1394-D: Workbit NinjaSCSI-32Bi/UDE driver
+--
+1768-N: David Huggins-Daines
+1769:E: dhd@debian.org
+1770-E: dhd@eradicator.org
+--
+1813-D: FSSTND group member
+1814:D: Debian core team member and maintainer of several Debian packages
+1815-S: 2 Lexington Close
+--
+2061-D: NET-1 beta testing & minor patches, original Smail binary packages for
+2062:D: Slackware and Debian, vote-taker for 2nd comp.os.linux reorganization
+2063-S: Post Office Box 611311
+--
+2693-N: Michael Meskes
+2694:E: meskes@debian.org
+2695-P: 1024/04B6E8F5 6C 77 33 CA CC D6 22 03  AB AB 15 A3 AE AD 39 7D
+2696-D: Kernel hacker. PostgreSQL hacker. Software watchdog daemon.
+2697:D: Maintainer of several Debian packages
+2698-S: Th.-Heuss-Str. 61
+--
+2854-E: imurdock@gnu.ai.mit.edu
+2855:D: Creator of Debian distribution
+2856-S: 30 White Tail Lane
+--
+3206-N: Giuliano Procida
+3207:E: myxie@debian.org,gprocida@madge.com
+3208-D: Madge Ambassador driver (Collage 155 Server ATM adapter)
+--
+3598-D: SCSI debugging
+3599:D: Maintainer of the Debian Kernel packages
+3600-S: 14355 SW Allen Blvd., Suite #140
+--
+3694-E: miquels@cistron.nl
+3695:D: Kernel and net hacker. Sysvinit, minicom. doing Debian stuff.
+3696-S: Cistron Internet Services
+--
+3959-E: smurf@smurf.noris.de
+3960:E: smurf@debian.org
+3961-E: matthias@urlichs.de
+
+/home/ubuntu/linux/net/netfilter/nft_redir.c
+2-/*
+3: * Copyright (c) 2014 Arturo Borrero Gonzalez <arturo@debian.org>
+4- */
+--
+268-MODULE_LICENSE("GPL");
+269:MODULE_AUTHOR("Arturo Borrero Gonzalez <arturo@debian.org>");
+270-MODULE_ALIAS_NFT_EXPR("redir");
+
+/home/ubuntu/linux/net/netfilter/nft_masq.c
+2-/*
+3: * Copyright (c) 2014 Arturo Borrero Gonzalez <arturo@debian.org>
+4- */
+--
+286-MODULE_LICENSE("GPL");
+287:MODULE_AUTHOR("Arturo Borrero Gonzalez <arturo@debian.org>");
+288-MODULE_ALIAS_NFT_EXPR("masq");
+
+/home/ubuntu/linux/.mailmap
+411-Matthew Wilcox <willy@infradead.org> <mawilcox@microsoft.com>
+412:Matthew Wilcox <willy@infradead.org> <willy@debian.org>
+413-Matthew Wilcox <willy@infradead.org> <willy@linux.intel.com>
+--
+579-Sebastian Reichel <sre@kernel.org> <sebastian.reichel@collabora.co.uk>
+580:Sebastian Reichel <sre@kernel.org> <sre@debian.org>
+581-Sedat Dilek <sedat.dilek@gmail.com> <sedat.dilek@credativ.de>
+
+/home/ubuntu/linux/drivers/net/ethernet/cirrus/mac89x0.c
+30-
+31:  David Huggins-Daines <dhd@debian.org>
+32-
+
+/home/ubuntu/linux/drivers/net/ethernet/natsemi/sonic.h
+14- *
+15: * 990611 David Huggins-Daines <dhd@debian.org>: This machine abstraction
+16- * does not cope with 16-bit bus sizes very well.  Therefore I have
+
+/home/ubuntu/linux/drivers/net/ethernet/natsemi/sonic.c
+22- *
+23: * (C) 1999 David Huggins-Daines <dhd@debian.org>
+24- *
+
+/home/ubuntu/linux/drivers/net/ethernet/8390/mac8390.c
+42-static char version[] =
+43:	"v0.4 2001-05-15 David Huggins-Daines <dhd@debian.org> and others\n";
+44-
+--
+447-
+448:MODULE_AUTHOR("David Huggins-Daines <dhd@debian.org> and others");
+449-MODULE_DESCRIPTION("Macintosh NS8390-based Nubus Ethernet driver");
+
+/home/ubuntu/linux/drivers/watchdog/pcwd.c
+35- * 971222	Changed open/close for temperature handling
+36: *		Michael Meskes <meskes@debian.org>.
+37- * 980112	Used minor numbers from include/linux/miscdevice.h
+
+/home/ubuntu/linux/drivers/ata/sata_inic162x.c
+14- *
+15: * http://thread.gmane.org/gmane.linux.debian.devel.bugs.rc/378525/focus=54491
+16- * https://bugzilla.kernel.org/show_bug.cgi?id=60565
+
+/home/ubuntu/linux/drivers/video/fbdev/macfb.c
+5- *
+6: * (c) 1999 David Huggins-Daines <dhd@debian.org>
+7- *
+
+/home/ubuntu/linux/drivers/video/fbdev/vga16fb.c
+3- *
+4: * Copyright 1999 Ben Pfaff <pfaffben@debian.org> and Petr Vandrovec <VANDROVE@vc.cvut.cz>
+5- * Based on VGA info at http://www.goodnet.com/~tinara/FreeVGA/home.htm
+
+/home/ubuntu/linux/drivers/video/fbdev/controlfb.c
+3- *
+4: *  Created 12 July 1998 by Dan Jacobowitz <dan@debian.org>
+5- *  Copyright (C) 1998 Dan Jacobowitz
+
+/home/ubuntu/linux/drivers/video/fbdev/controlfb.h
+4- *
+5: * Copyright (C) 1998 Daniel Jacobowitz <dan@debian.org>
+6- *
+
+/home/ubuntu/linux/drivers/video/fbdev/i740fb.c
+7- * which was partially based on:
+8: *  VGA 16-color framebuffer driver (c) 1999 Ben Pfaff <pfaffben@debian.org>
+9- *	and Petr Vandrovec <VANDROVE@vc.cvut.cz>
+
+/home/ubuntu/linux/drivers/video/fbdev/valkyriefb.c
+9- *
+10: *  Ported to m68k Macintosh by David Huggins-Daines <dhd@debian.org>
+11- *
+--
+14- *   controlfb.c -- frame buffer device for the PowerMac 'control' display
+15: *   Copyright (C) 1998 Dan Jacobowitz <dan@debian.org>
+16- *
+
+/home/ubuntu/linux/drivers/video/fbdev/pmag-aa-fb.c
+2- *	linux/drivers/video/pmag-aa-fb.c
+3: *	Copyright 2002 Karsten Merker <merker@debian.org>
+4- *
+--
+6- *	pmag-ba-fb.c, which is Copyright (C) 1999, 2000, 2001 by
+7: *	Michael Engel <engel@unix-ag.org>, Karsten Merker <merker@debian.org>
+8- *	and Harald Koerfgen <hkoerfg@web.de>, which itself is derived from
+
+/home/ubuntu/linux/drivers/video/fbdev/geode/gxfb.h
+2-/*
+3: * Copyright (C) 2008 Andres Salomon <dilinger@debian.org>
+4- *
+
+/home/ubuntu/linux/drivers/video/fbdev/geode/lxfb.h
+4- * Copyright (C) 2006-2007, Advanced Micro Devices,Inc.
+5: * Copyright (c) 2008  Andres Salomon <dilinger@debian.org>
+6- */
+
+/home/ubuntu/linux/drivers/video/fbdev/geode/suspend_gx.c
+3- *   Copyright (C) 2007 Advanced Micro Devices, Inc.
+4: *   Copyright (C) 2008 Andres Salomon <dilinger@debian.org>
+5- */
+
+/home/ubuntu/linux/drivers/video/fbdev/valkyriefb.h
+12- *
+13: * Ported to 68k Macintosh by David Huggins-Daines <dhd@debian.org>
+14- *
+--
+17- *  controlfb.h: Constants of all sorts for controlfb
+18: *  Copyright (C) 1998 Daniel Jacobowitz <dan@debian.org>
+19- *
+
+/home/ubuntu/linux/drivers/video/console/mdacon.c
+7- *
+8: *      slight improvements (c) 2000 Edward Betts <edward@debian.org>
+9- *
+
+/home/ubuntu/linux/drivers/misc/cs5535-mfgpt.c
+5- * Copyright (C) 2006, Advanced Micro Devices, Inc.
+6: * Copyright (C) 2007  Andres Salomon <dilinger@debian.org>
+7- * Copyright (C) 2009  Andres Salomon <dilinger@collabora.co.uk>
+
+/home/ubuntu/linux/drivers/input/mouse/synaptics_usb.c
+5- *  Copyright (c) 2002 Rob Miller (rob@inpharmatica . co . uk)
+6: *  Copyright (c) 2003 Ron Lee (ron@debian.org)
+7- *	cPad driver for kernel 2.4
+--
+9- *  Copyright (c) 2004 Jan Steinhoff (cpad@jan-steinhoff . de)
+10: *  Copyright (c) 2004 Ron Lee (ron@debian.org)
+11- *	rewritten for kernel 2.6
+--
+561-MODULE_AUTHOR("Rob Miller <rob@inpharmatica.co.uk>, "
+562:              "Ron Lee <ron@debian.org>, "
+563-              "Jan Steinhoff <cpad@jan-steinhoff.de>");
+
+/home/ubuntu/linux/drivers/input/mouse/hgpk.c
+7- *   Zephaniah E. Hull
+8: *   Andres Salomon <dilinger@debian.org>
+9- *
+
+/home/ubuntu/linux/drivers/input/touchscreen/goodix.c
+5- *  Copyright (c) 2014 Red Hat Inc.
+6: *  Copyright (c) 2015 K. Merker <merker@debian.org>
+7- *
+
+/home/ubuntu/linux/drivers/tty/serial/8250/8250_parisc.c
+4- *
+5: *	(c) Copyright Matthew Wilcox <willy@debian.org> 2001-2002
+6- */
+
+/home/ubuntu/linux/drivers/hwmon/dell-smm-hwmon.c
+4- *
+5: * Copyright (C) 2001  Massimo Dal Zotto <dz@debian.org>
+6- *
+--
+110-
+111:MODULE_AUTHOR("Massimo Dal Zotto <dz@debian.org>");
+112-MODULE_AUTHOR("Pali Rohár <pali@kernel.org>");
+
+/home/ubuntu/linux/drivers/media/dvb-core/dvb_net.c
+126- *  stolen from eth.c out of the linux kernel, hacked for dvb-device
+127: *  by Michael Holzt <kju@debian.org>
+128- */
+
+/home/ubuntu/linux/drivers/media/radio/radio-mr800.c
+19- * achievements (specifications given).
+20: * Also, Faidon Liambotis <paravoid@debian.org> wrote nice driver for this radio
+21- * in 2007. He allowed to use his driver to improve current mr800 radio driver.
+
+/home/ubuntu/linux/drivers/media/usb/pvrusb2/pvrusb2-i2c-core.c
+203-		   things seem to happen within the lirc driver module
+204:		   (version 0.8.0-7 sources from Debian, when run under
+205-		   vanilla 2.6.17.6 kernel) - and I don't have the patience
+
+/home/ubuntu/linux/drivers/clocksource/timer-cs5535.c
+5- * Copyright (C) 2006, Advanced Micro Devices, Inc.
+6: * Copyright (C) 2007  Andres Salomon <dilinger@debian.org>
+7- * Copyright (C) 2009  Andres Salomon <dilinger@collabora.co.uk>
+
+/home/ubuntu/linux/drivers/nubus/proc.c
+3-
+4:   By David Huggins-Daines <dhd@debian.org>
+5-
+
+/home/ubuntu/linux/drivers/cdrom/cdrom.c
+2-   Copyright (c) 1996, 1997 David A. van Leeuwen.
+3:   Copyright (c) 1997, 1998 Erik Andersen <andersee@debian.org>
+4-   Copyright (c) 1998, 1999 Jens Axboe <axboe@image.dk>
+--
+22-
+23:2.00  Dec  2, 1997 -- Erik Andersen <andersee@debian.org>
+24-  -- New maintainer! As David A. van Leeuwen has been too busy to actively
+--
+54-
+55:2.12  Jan  24, 1998 -- Erik Andersen <andersee@debian.org>
+56-  -- Fixed a bug in the IOCTL_IN and IOCTL_OUT macros.  It turns out that
+--
+60-
+61:2.13  July 17, 1998 -- Erik Andersen <andersee@debian.org>
+62-  -- Fixed a bug in CDROM_SELECT_SPEED where you couldn't lower the speed
+--
+69-
+70:  2.14 August 17, 1998 -- Erik Andersen <andersee@debian.org>
+71-  -- Fixed a bug in cdrom_media_changed and handling of reporting that
+
+/home/ubuntu/linux/drivers/parisc/led.c
+6- *	(c) Copyright 2000 Helge Deller <hdeller@redhat.com>
+7: *	(c) Copyright 2001 Randolph Chung <tausq@debian.org>
+8- *	(c) Copyright 2000-2023 Helge Deller <deller@gmx.de>
+
+/home/ubuntu/linux/drivers/firewire/sbp2.c
+12- * with later contributions and ongoing maintenance from
+13: *     Ben Collins <bcollins@debian.org>,
+14- *     Stefan Richter <stefanr@s5r6.in-berlin.de>
+
+/home/ubuntu/linux/drivers/gpu/drm/ci/build.yml
+14-    - .build
+15:    - .use-debian/arm64_build
+16-  tags:
+--
+25-    - .build
+26:    - .use-debian/arm64_build
+27-  tags:
+--
+36-    - .build
+37:    - .use-debian/x86_64_build
+38-  variables:
+
+/home/ubuntu/linux/drivers/gpu/drm/ci/container.yml
+5-
+6:debian/x86_64_build-base:
+7-  variables:
+--
+9-
+10:debian/x86_64_test-gl:
+11-  variables:
+--
+13-
+14:debian/arm64_build:
+15-  variables:
+--
+26-
+27:debian/x86_64_test-vk:
+28-  rules:
+--
+34-
+35:debian/android_build:
+36-  rules:
+--
+38-
+39:debian/x86_64_test-android:
+40-  rules:
+--
+50-
+51:.debian/x86_64_build-mingw:
+52-   rules:
+
+/home/ubuntu/linux/drivers/gpu/drm/ci/static-checks.yml
+3-    - .build
+4:    - .use-debian/x86_64_build
+5-  script:
+
+/home/ubuntu/linux/drivers/gpu/drm/ci/build.sh
+16-    GCC_ARCH="aarch64-linux-gnu"
+17:    DEBIAN_ARCH="arm64"
+18-    DEVICE_TREES="arch/arm64/boot/dts/rockchip/rk3399-gru-kevin.dtb"
+--
+31-    GCC_ARCH="arm-linux-gnueabihf"
+32:    DEBIAN_ARCH="armhf"
+33-    DEVICE_TREES="arch/arm/boot/dts/rockchip/rk3288-veyron-jaq.dtb"
+--
+38-    GCC_ARCH="x86_64-linux-gnu"
+39:    DEBIAN_ARCH="amd64"
+40-    DEVICE_TREES=""
+--
+45-
+46:# The kernel doesn't like the gold linker (or the old lld in our debians).
+47-# Sneak in some override symlinks during kernel build until we can update
+48:# debian.
+49-mkdir -p ld-links
+--
+110-
+111:if [[ ${DEBIAN_ARCH} = "arm64" ]]; then
+112-    make Image.lzma
+--
+145-        ci-fairy s3cp --token-file "${CI_JOB_JWT_FILE}" /lava-files/$f \
+146:                https://${PIPELINE_ARTIFACTS_BASE}/${DEBIAN_ARCH}/$f
+147-    done
+--
+150-    tar --zstd -cf $S3_ARTIFACT_NAME install
+151:[Omitted long matching line]
+152-
+153:    echo "Download vmlinux.xz from https://${PIPELINE_ARTIFACTS_BASE}/${DEBIAN_ARCH}/vmlinux.xz"
+154-fi
+
+/home/ubuntu/linux/drivers/gpu/drm/ci/gitlab-ci.yml
+68-      - '/templates/alpine.yml'
+69:      - '/templates/debian.yml'
+70-      - '/templates/fedora.yml'
+
+/home/ubuntu/linux/drivers/gpu/drm/ci/lava-submit.sh
+39-	--rootfs-url-prefix "https://${BASE_SYSTEM_HOST_PATH}" \
+40:	--kernel-url-prefix "https://${PIPELINE_ARTIFACTS_BASE}/${DEBIAN_ARCH}" \
+41:	--build-url "${FDO_HTTP_CACHE_URI:-}https://${PIPELINE_ARTIFACTS_BASE}/${DEBIAN_ARCH}/kernel-files.tar.zst" \
+42-	--job-rootfs-overlay-url "${FDO_HTTP_CACHE_URI:-}https://${JOB_ROOTFS_OVERLAY_PATH}" \
+
+/home/ubuntu/linux/drivers/gpu/drm/ci/image-tags.yml
+2-   CONTAINER_TAG: "2023-10-11-mesa-uprev"
+3:   DEBIAN_X86_64_BUILD_BASE_IMAGE: "debian/x86_64_build-base"
+4:   DEBIAN_BASE_TAG: "${CONTAINER_TAG}"
+5-
+6:   DEBIAN_X86_64_BUILD_IMAGE_PATH: "debian/x86_64_build"
+7:   DEBIAN_BUILD_TAG: "2023-10-08-config"
+8-
+--
+10-
+11:   DEBIAN_X86_64_TEST_BASE_IMAGE: "debian/x86_64_test-base"
+12:   DEBIAN_X86_64_TEST_IMAGE_GL_PATH: "debian/x86_64_test-gl"
+13:   DEBIAN_X86_64_TEST_GL_TAG: "${CONTAINER_TAG}"
+14-
+
+/home/ubuntu/linux/drivers/gpu/drm/ci/test.yml
+25-    HWCI_TEST_SCRIPT: "/install/igt_runner.sh"
+26:    DEBIAN_ARCH: "armhf"
+27-  dependencies:
+--
+31-    - kernel+rootfs_arm32
+32:    - debian/x86_64_build
+33-    - testing:arm32
+--
+40-    HWCI_TEST_SCRIPT: "/install/igt_runner.sh"
+41:    DEBIAN_ARCH: "arm64"
+42-  dependencies:
+--
+46-    - kernel+rootfs_arm64
+47:    - debian/x86_64_build
+48-    - testing:arm64
+--
+55-    HWCI_TEST_SCRIPT: "/install/igt_runner.sh"
+56:    DEBIAN_ARCH: "amd64"
+57-  dependencies:
+--
+61-    - kernel+rootfs_x86_64
+62:    - debian/x86_64_build
+63-    - testing:x86_64
+--
+68-    - .baremetal-test-arm64
+69:    - .use-debian/arm64_test
+70-    - .test-rules
+--
+77-  needs:
+78:    - debian/arm64_test
+79-    - job: testing:arm64
+--
+354-  needs:
+355:    - debian/x86_64_test-gl
+356-    - testing:x86_64
+
+/home/ubuntu/linux/drivers/scsi/sd.c
+23- *	 - Badari Pulavarty <pbadari@us.ibm.com>, Matthew Wilcox 
+24: *	   <willy@debian.org>, Kurt Garloff <garloff@suse.de>: 
+25- *	   Support 32k/1M disks.
+
+/home/ubuntu/linux/drivers/scsi/zorro_esp.c
+6- *
+7: * Copyright (C) 2011,2018 Michael Schmitz (schmitz@debian.org) for
+8- *               migration to ESP SCSI core
+--
+50-
+51:MODULE_AUTHOR("Michael Schmitz <schmitz@debian.org>");
+52-MODULE_DESCRIPTION("Amiga Zorro NCR5C9x (ESP) driver");
+
+/home/ubuntu/linux/drivers/scsi/nsp32.c
+5- *      YOKOTA Hiroshi <yokota@netlab.is.tsukuba.ac.jp>
+6: *      GOTO Masanori <gotom@debian.or.jp>, <gotom@debian.org>
+7- *
+--
+58-
+59:MODULE_AUTHOR("YOKOTA Hiroshi <yokota@netlab.is.tsukuba.ac.jp>, GOTO Masanori <gotom@debian.or.jp>");
+60-MODULE_DESCRIPTION("Workbit NinjaSCSI-32Bi/UDE CardBus/PCI SCSI host bus adapter module");
+
+/home/ubuntu/linux/include/xen/xenbus_dev.h
+3- *
+4: * Copyright (c) 2011 Bastian Blank <waldi@debian.org>
+5- *
+
+/home/ubuntu/linux/include/linux/cdrom.h
+7- *               1996         David van Leeuwen, david@tm.tno.nl
+8: *               1997, 1998   Erik Andersen, andersee@debian.org
+9- *               1998-2002    Jens Axboe, axboe@suse.de
+
+/home/ubuntu/linux/include/uapi/linux/i8k.h
+4- *
+5: * Copyright (C) 2001  Massimo Dal Zotto <dz@debian.org>
+6- *
+
+/home/ubuntu/linux/include/uapi/linux/cdrom.h
+7- *               1996         David van Leeuwen, david@tm.tno.nl
+8: *               1997, 1998   Erik Andersen, andersee@debian.org
+9- *               1998-2002    Jens Axboe, axboe@suse.de
+
+/home/ubuntu/linux/kernel/sys.c
+2811-	 *
+2812:	 *  -Erik Andersen <andersee@debian.org>
+2813-	 */
+
+/home/ubuntu/linux/Makefile
+1485-		  arch/$(SRCARCH)/include/generated .objdiff \
+1486:		  debian snap tar-install \
+1487-		  .config .config.old .version \
+
+/home/ubuntu/linux/scripts/checkstack.pl
+15-#	sparc port by Martin Habets <errandir_news@mph.eclipse.co.uk>
+16:#	ppc64le port by Breno Leitao <leitao@debian.org>
+17-#	riscv port by Wadim Mueller <wafgo01@gmail.com>
+
+/home/ubuntu/linux/scripts/spelling.txt
+1:# Originally from Debian's Lintian tool. Various false positives have been
+2-# removed, and various additions have been made as they've been discovered
+
+/home/ubuntu/linux/scripts/package/builddeb
+28-	pname=$1
+29:	pdir=debian/$1
+30-
+--
+52-
+53:	# Not all arches have the same installed path in debian
+54-	# XXX: have each arch Makefile export a variable of the canonical image install
+--
+66-	# Install the maintainer scripts
+67:	# Note: hook scripts under /etc/kernel are also executed by official Debian
+68-	# kernel packages, as well as kernel packages built using make-kpkg.
+--
+74-
+75:		mkdir -p "${pdir}/DEBIAN"
+76:		cat <<-EOF > "${pdir}/DEBIAN/${script}"
+77-
+--
+90-		EOF
+91:		chmod 755 "${pdir}/DEBIAN/${script}"
+92-	done
+--
+95-install_linux_image_dbg () {
+96:	pdir=debian/$1
+97-
+--
+123-install_kernel_headers () {
+124:	pdir=debian/$1
+125-	version=${1#linux-headers-}
+--
+133-install_libc_headers () {
+134:	pdir=debian/$1
+135-
+--
+138-	# move asm headers to /usr/include/<libc-machine>/asm to match the structure
+139:	# used by Debian-based distros (to support multi-arch)
+140-	mkdir "$pdir/usr/include/${DEB_HOST_MULTIARCH}"
+
+/home/ubuntu/linux/scripts/kconfig/streamline_config.pl
+35-#
+36:# Here's what I did with my Debian distribution.
+37-#
+
+/home/ubuntu/linux/scripts/package/debian/copyright
+14-
+15:On Debian GNU/Linux systems, the complete text of the GNU General Public
+16-License version 2 can be found in `/usr/share/common-licenses/GPL-2'.
+
+/home/ubuntu/linux/scripts/package/mkdebian
+4-#
+5:# Simple script to generate a debian/ directory for a Linux kernel.
+6-
+--
+26-
+27:	# Attempt to find the correct Debian architecture
+28-	case "$UTS_MACHINE" in
+--
+79-		echo "Your architecture doesn't have its equivalent" >&2
+80:		echo "Debian userspace architecture defined!" >&2
+81-		echo "Falling back to the current host architecture ($debarch)." >&2
+--
+86-
+87:# Create debian/source/ if it is a source package build
+88-gen_source ()
+89-{
+90:	mkdir -p debian/source
+91-
+92:	echo "3.0 (quilt)" > debian/source/format
+93-
+--
+96-		echo "extend-diff-ignore = .*"
+97:	} > debian/source/local-options
+98-
+99-	# Add .config as a patch
+100:	mkdir -p debian/patches
+101-	{
+--
+107-		diff -u /dev/null "${KCONFIG_CONFIG}" | tail -n +3
+108:	} > debian/patches/config.patch
+109:	echo config.patch > debian/patches/series
+110-
+111:	"${srctree}/scripts/package/gen-diff-patch" debian/patches/diff.patch
+112:	if [ -s debian/patches/diff.patch ]; then
+113-		sed -i "
+--
+116-			1i
+117:		" debian/patches/diff.patch
+118-
+119:		echo diff.patch >> debian/patches/series
+120-	else
+121:		rm -f debian/patches/diff.patch
+122-	fi
+--
+124-
+125:rm -rf debian
+126:mkdir debian
+127-
+--
+177-
+178:echo $debarch > debian/arch
+179-
+180-# Generate a simple changelog template
+181:cat <<EOF > debian/changelog
+182-$sourcename ($packageversion) $distribution; urgency=low
+--
+189-# Generate a control file
+190:cat <<EOF > debian/control
+191-Source: $sourcename
+--
+207-if [ "${SRCARCH}" != um ]; then
+208:cat <<EOF >> debian/control
+209-
+--
+220-if is_enabled CONFIG_MODULES; then
+221:cat <<EOF >> debian/control
+222-
+--
+233-if is_enabled CONFIG_DEBUG_INFO; then
+234:cat <<EOF >> debian/control
+235-
+--
+244-
+245:cat <<EOF > debian/rules.vars
+246-ARCH := ${ARCH}
+--
+249-
+250:cp "${srctree}/scripts/package/debian/copyright" debian/
+251:cp "${srctree}/scripts/package/debian/rules" debian/
+252-
+
+/home/ubuntu/linux/scripts/package/debian/rules
+3-
+4:# in case debian/rules is executed directly
+5-export DEB_RULES_REQUIRES_ROOT := no
+6-
+7:include debian/rules.vars
+8-
+--
+14-# When KBUILD_VERBOSE is undefined (presumably you are directly working with
+15:# the debianized tree), show verbose logs unless DEB_BUILD_OPTION=terse is set.
+16-ifeq ($(origin KBUILD_VERBOSE),undefined)
+--
+35-
+36:mk-files = $(patsubst binary-%,debian/%.files,$1)
+37-package = $($(@:binary-%=%-package))
+--
+66-binary-arch: $(binary-targets)
+67:	$(Q)cat $(call mk-files,$^) > debian/files
+68-
+--
+78-	$(Q)dh_clean
+79:	$(Q)rm -rf debian/deb-env.vars* debian/*.files
+80-	$(Q)$(MAKE) ARCH=$(ARCH) clean
+81-
+82:# If DEB_HOST_ARCH is empty, it is likely that debian/rules was executed
+83-# directly. Run 'dpkg-architecture --print-set --print-format=make' to
+--
+85-ifndef DEB_HOST_ARCH
+86:include debian/deb-env.vars
+87-
+88:debian/deb-env.vars:
+89:	$(Q)dpkg-architecture -a$$(cat debian/arch) --print-set --print-format=make > $@.tmp
+90-	$(Q)mv $@.tmp $@
+
+/home/ubuntu/linux/scripts/Makefile.package
+89-
+90:debian-orig-suffix := \
+91-    $(strip $(if $(filter $(supported-deb-source-compress), $(KDEB_SOURCE_COMPRESS)), \
+--
+93-
+94:quiet_cmd_debianize = GEN     $@
+95:      cmd_debianize = $(srctree)/scripts/package/mkdebian $(mkdebian-opts)
+96-
+97:debian: FORCE
+98:	$(call cmd,debianize)
+99-
+100:PHONY += debian-orig
+101:debian-orig: private source = $(shell dpkg-parsechangelog -S Source)
+102:debian-orig: private version = $(shell dpkg-parsechangelog -S Version | sed 's/-[^-]*$$//')
+103:debian-orig: private orig-name = $(source)_$(version).orig.tar$(debian-orig-suffix)
+104:debian-orig: mkdebian-opts = --need-source
+105:debian-orig: linux.tar$(debian-orig-suffix) debian
+106-	$(Q)if [ "$(df  --output=target .. 2>/dev/null)" = "$(df --output=target $< 2>/dev/null)" ]; then \
+--
+117-
+118:deb-pkg srcdeb-pkg: debian-orig
+119:bindeb-pkg: debian
+120-deb-pkg srcdeb-pkg bindeb-pkg:
+--
+125-	$(if $(findstring binary, $(build-type)), \
+126:		-R'$(MAKE) -f debian/rules' -j1 -a$$(cat debian/arch), \
+127-		--no-check-builddeps) \
+
+/home/ubuntu/linux/scripts/sphinx-pre-install
+346-
+347:sub give_debian_hints()
+348-{
+--
+652-	if ($system_release =~ /Ubuntu/) {
+653:		give_debian_hints;
+654-		return;
+655-	}
+656:	if ($system_release =~ /Debian/) {
+657:		give_debian_hints;
+658-		return;
+
+/home/ubuntu/linux/MAINTAINERS
+10313-IBM Power in-Nest Crypto Acceleration
+10314:M:	Breno Leitão <leitao@debian.org>
+10315-M:	Nayna Jain <nayna@linux.ibm.com>
+--
+10392-IBM Power VMX Cryptographic instructions
+10393:M:	Breno Leitão <leitao@debian.org>
+10394-M:	Nayna Jain <nayna@linux.ibm.com>
+--
+15290-L:	linux-block@vger.kernel.org
+15291:L:	nbd@other.debian.org
+15292-S:	Maintained
+--
+15588-NINJA SCSI-32Bi/UDE PCI/CARDBUS SCSI HOST ADAPTER DRIVER
+15589:M:	GOTO Masanori <gotom@debian.or.jp>
+15590-M:	YOKOTA Hiroshi <yokota@netlab.is.tsukuba.ac.jp>
+
+/home/ubuntu/linux/.gitignore
+80-#
+81:# Debian directory (make deb-pkg)
+82-#
+83:/debian/
+84-
+
+/home/ubuntu/linux/sound/pci/ac97/ac97_patch.c
+208-/* The following snd_ac97_ymf753_... items added by David Shust (dshust@shustring.com) */
+209:/* Modified for YMF743 by Keita Maehara <maehara@debian.org> */
+210-
+
+/home/ubuntu/linux/sound/pci/ad1889.c
+8- * Copyright (C) 2005, Thibaut Varene <varenet@parisc-linux.org>
+9: *   Based on the OSS AD1889 driver by Randolph Chung <tausq@debian.org>
+10- *
+
+/home/ubuntu/linux/sound/pci/cs5535audio/cs5535audio_olpc.c
+5- * Copyright © 2006  Jaya Kumar <jayakumar.lkml@gmail.com>
+6: * Copyright © 2007-2008  Andres Salomon <dilinger@debian.org>
+7- */
+
+/home/ubuntu/linux/sound/parisc/harmony.c
+6- *
+7: *   Copyright (C) 2004, Kyle McMartin <kyle@{debian.org,parisc-linux.org}>
+8- *
+
+/home/ubuntu/linux/arch/arm/boot/dts/allwinner/sun6i-a31s-primo81.dts
+2- * Copyright 2014 Siarhei Siamashka <siarhei.siamashka@gmail.com>
+3: * Copyright 2015 Karsten Merker <merker@debian.org>
+4- * Copyright 2015 Chen-Yu Tsai <wens@csie.org>
+
+/home/ubuntu/linux/arch/arm/boot/dts/allwinner/sun7i-a20-olimex-som-evb.dts
+2- * Copyright 2015 - Marcus Cooper <codekipper@gmail.com>
+3: * Copyright 2015 - Karsten Merker <merker@debian.org>
+4- *
+
+/home/ubuntu/linux/arch/arm/boot/dts/marvell/kirkwood-b3.dts
+11- *
+12: * https://lists.debian.org/debian-arm/2012/08/msg00128.html
+13- */
+
+/home/ubuntu/linux/arch/parisc/mm/init.c
+8- *  Copyright 1999 Philipp Rumpf (prumpf@tux.org)
+9: *  Copyright 2004 Randolph Chung (tausq@debian.org)
+10- *  Copyright 2006-2007 Helge Deller (deller@gmx.de)
+
+/home/ubuntu/linux/arch/parisc/math-emu/hppa.h
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/sfdiv.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/frnd.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/decode_exc.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fcnvuf.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/dfadd.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/sgl_float.h
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/sfrem.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/cnv_float.h
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/dbl_float.h
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fcnvxf.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/dfdiv.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/float.h
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fcnvfxt.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fpu.h
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fpudispatch.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/dfrem.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/denormal.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/dfsub.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/sfcmp.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/math-emu.h
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fmpyfadd.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/sfsub.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/sfadd.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fcnvfx.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/driver.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+--
+13- *  Copyright (C) 1999, 2000  Philipp Rumpf <prumpf@tux.org>
+14: *  Copyright (C) 2001	      Hewlett-Packard <bame@debian.org>
+15- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/dfsqrt.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/dfcmp.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/dfmpy.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fcnvfu.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fcnvff.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/sfmpy.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/sfsqrt.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fcnvfut.c
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/math-emu/fpbits.h
+5- * Floating-point emulation code
+6: *  Copyright (C) 2001 Hewlett-Packard (Paul Bame) <bame@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/parisc/kernel/head.S
+9- * Copyright (C) 2001 Grant Grundler (Hewlett Packard)
+10: * Copyright (C) 2004 Kyle McMartin <kyle@debian.org>
+11- *
+
+/home/ubuntu/linux/arch/parisc/kernel/unaligned.c
+4- *
+5: *    Copyright (C) 2001 Randolph Chung <tausq@debian.org>
+6- *    Copyright (C) 2022 Helge Deller <deller@gmx.de>
+7: *    Significantly tweaked by LaMont Jones <lamont@debian.org>
+8- */
+
+/home/ubuntu/linux/arch/parisc/kernel/ptrace.c
+6- * Copyright (C) 2000 Matthew Wilcox <matthew@wil.cx>
+7: * Copyright (C) 2000 David Huggins-Daines <dhd@debian.org>
+8- * Copyright (C) 2008-2016 Helge Deller <deller@gmx.de>
+
+/home/ubuntu/linux/arch/parisc/kernel/perf.c
+3- *  Parisc performance counters
+4: *  Copyright (C) 2001 Randolph Chung <tausq@debian.org>
+5- *
+
+/home/ubuntu/linux/arch/parisc/kernel/unwind.c
+4- *
+5: * (c) 2002-2004 Randolph Chung <tausq@debian.org>
+6- *
+
+/home/ubuntu/linux/arch/parisc/kernel/signal.c
+4- *
+5: *  Copyright (C) 2000 David Huggins-Daines <dhd@debian.org>
+6- *  Copyright (C) 2000 Linuxcare, Inc.
+
+/home/ubuntu/linux/arch/parisc/kernel/vdso32/sigtramp.S
+4- *
+5: * Copyright (C) 2006 Randolph Chung <tausq@debian.org>
+6- * Copyright (C) 2018-2022 Helge Deller <deller@gmx.de>
+
+/home/ubuntu/linux/arch/parisc/include/asm/floppy.h
+4- *    Linux/PA-RISC Project (http://www.parisc-linux.org/)
+5: *    Copyright (C) 2000 Matthew Wilcox (willy a debian . org)
+6- *    Copyright (C) 2000 Dave Kennedy
+
+/home/ubuntu/linux/arch/parisc/kernel/vdso64/sigtramp.S
+4- *
+5: * Copyright (C) 2006 Randolph Chung <tausq@debian.org>
+6- * Copyright (C) 2018-2022 Helge Deller <deller@gmx.de>
+
+/home/ubuntu/linux/arch/parisc/include/asm/checksum.h
+23- *
+24: *	Written by Randolph Chung <tausq@debian.org>, and then mucked with by
+25: *	LaMont Jones <lamont@debian.org>
+26- */
+
+/home/ubuntu/linux/arch/parisc/kernel/stacktrace.c
+6- *  based on arch/x86/kernel/stacktrace.c by Ingo Molnar <mingo@redhat.com>
+7: *  and parisc unwind functions by Randolph Chung <tausq@debian.org>
+8- *
+
+/home/ubuntu/linux/arch/parisc/kernel/module.c
+8- *    Linux/PA-RISC Project
+9: *    Copyright (C) 2003 Randolph Chung <tausq at debian . org>
+10- *    Copyright (C) 2008 Helge Deller <deller@gmx.de>
+
+/home/ubuntu/linux/arch/parisc/include/uapi/asm/ioctl.h
+3- *    Linux/PA-RISC Project (http://www.parisc-linux.org/)
+4: *    Copyright (C) 1999,2003 Matthew Wilcox < willy at debian . org >
+5- *    portions from "linux/ioctl.h for Linux" by H.H. Bergman.
+
+/home/ubuntu/linux/arch/parisc/lib/memcpy.c
+4- *
+5: *    Copyright (C) 2004 Randolph Chung <tausq@debian.org>
+6- *    Copyright (C) 2013-2017 Helge Deller <deller@gmx.de>
+
+/home/ubuntu/linux/arch/parisc/lib/io.c
+5- * Copyright (c) Matthew Wilcox 2001 for Hewlett-Packard
+6: * Copyright (c) Randolph Chung 2001 <tausq@debian.org>
+7- *
+
+/home/ubuntu/linux/arch/x86/kernel/reboot_fixups_32.c
+6- * geode-gx1/cs5530a - Jaya Kumar <jayalk@intworks.biz>
+7: * geode-gx/lx/cs5536 - Andres Salomon <dilinger@debian.org>
+8- *
+
+/home/ubuntu/linux/arch/x86/platform/olpc/olpc.c
+5- * Copyright © 2006  Advanced Micro Devices, Inc.
+6: * Copyright © 2007-2008  Andres Salomon <dilinger@debian.org>
+7- */
+
+/home/ubuntu/linux/arch/mips/cavium-octeon/crypto/octeon-sha512.c
+12- * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
+13: * Copyright (c) 2003 Kyle McMartin <kyle@debian.org>
+14- */
+
+/home/ubuntu/linux/arch/sparc/crypto/sha512_glue.c
+7- * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
+8: * Copyright (c) 2003 Kyle McMartin <kyle@debian.org>
+9- */
+
+/home/ubuntu/linux/crypto/sha512_generic.c
+5- * Copyright (c) Andrew McDonald <andrew@mcdonald.org.uk>
+6: * Copyright (c) 2003 Kyle McMartin <kyle@debian.org>
+7- */
+
+/home/ubuntu/linux/crypto/blowfish_common.c
+13- * Copyright (c) Herbert Valerio Riedel <hvr@hvrlab.org>
+14: * Copyright (c) Kyle McMartin <kyle@debian.org>
+15- * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
+
+/home/ubuntu/linux/crypto/blowfish_generic.c
+10- * Copyright (c) Herbert Valerio Riedel <hvr@hvrlab.org>
+11: * Copyright (c) Kyle McMartin <kyle@debian.org>
+12- * Copyright (c) 2002 James Morris <jmorris@intercode.com.au>
+
+/home/ubuntu/linux/crypto/aes_generic.c
+10- *  Herbert Valerio Riedel <hvr@hvrlab.org>
+11: *  Kyle McMartin <kyle@debian.org>
+12- *  Adam J. Richter <adam@yggdrasil.com> (conversion to 2.5 API).
+
+/home/ubuntu/linux/fs/nfs/blocklayout/dev.c
+339-	 * wwn- links will only point to the first discovered SCSI device there.
+340:	 * On other distributions like Debian, the default SCSI by-id path will
+341-	 * point to the dm-multipath device if one exists.
+
+/home/ubuntu/linux/fs/befs/ChangeLog
+40-
+41:* Made a debian package of the source for use with kernel-package. [WD]
+42-
