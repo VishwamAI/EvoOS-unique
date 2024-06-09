@@ -2975,10 +2975,10 @@ static void output_source_sfd( struct makefile *make, struct incl_file *source, 
             char *args = strtok( NULL, "" );
 
             strarray_add( &make->all_targets[0], xstrdup( font ));
-            output( "%s: %s %s\n", obj_dir_path( make, font ),
-                    tools_path( make, "sfnt2fon" ), ttf_file );
-            output( "\t%s%s -q -o $@ %s %s\n", cmd_prefix( "GEN" ),
-                    tools_path( make, "sfnt2fon" ), ttf_file, args );
+            /* output( "%s: %s %s\n", obj_dir_path( make, font ),
+                    tools_path( make, "sfnt2fon" ), ttf_file ); */
+            /* output( "\t%s%s -q -o $@ %s %s\n", cmd_prefix( "GEN" ),
+                    tools_path( make, "sfnt2fon" ), ttf_file, args ); */
             add_install_rule( make, source->name, 0, xstrdup(font), strmake( "d$(fontdir)/%s", font ));
         }
     }
