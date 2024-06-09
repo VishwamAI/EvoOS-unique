@@ -655,9 +655,9 @@ U8* KMemory::lockReadOnlyMemory(U32 address, U32 len) {
     if (len <= K_PAGE_SIZE - offset) {
         return page->getReadPtr(this, address, true);
     }
-    std::shared_ptr<U8[]> p = std::make_shared<U8[]>(len);
+    std::shared_ptr<U8[]> p = std::shared_ptr<U8[]>(new U8[len], std::default_delete<U8[]>());
     memcpy(p.get(), address, len);
-    lockedMemory.set(p.get(), p);    
+    lockedMemory.set(p.get(), p);
     return p.get();
 }
 

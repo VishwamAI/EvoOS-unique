@@ -337,7 +337,7 @@ std::shared_ptr<U8[]> loadData(BitmapInfoHeader& bih, BReadFile& f) {
         return nullptr;
     } else {
 	    int dataSize = bih.biHeight * stride;
-        result = std::make_shared<U8[]>(dataSize);
+        result = std::shared_ptr<U8[]>(new U8[dataSize], std::default_delete<U8[]>());
         f.read(result.get(), dataSize);
     }
 
@@ -368,7 +368,7 @@ std::shared_ptr<U8[]> parseIcon(BReadFile& f, IconInfo& info, int* width, int* h
         int maskStride = (info.bih.biWidth + 31) / 32 * 4;
         *width = info.bih.biWidth;
         *height = info.bih.biHeight;
-        std::shared_ptr<U8[]> result = std::make_shared<U8[]>(info.bih.biWidth * info.bih.biHeight * 4);
+        std::shared_ptr<U8[]> result = std::shared_ptr<U8[]>(new U8[info.bih.biWidth * info.bih.biHeight * 4], std::default_delete<U8[]>());
         U8* pResult = result.get();
         for (int y=0;y<info.bih.biHeight;y++) {
             for (int x=0;x<info.bih.biWidth;x++) {
@@ -379,7 +379,7 @@ std::shared_ptr<U8[]> parseIcon(BReadFile& f, IconInfo& info, int* width, int* h
                 if (byteIndex & 1) {
                     paletteIndex = paletteIndex & 0xF;
                 } else {
-                    paletteIndex = (paletteIndex >> 4) & 0xF;                    
+                    paletteIndex = (paletteIndex >> 4) & 0xF;
                 }
                 U32 c = palette[paletteIndex];
                 pResult[index+2] = c & 0xFF;
@@ -397,7 +397,7 @@ std::shared_ptr<U8[]> parseIcon(BReadFile& f, IconInfo& info, int* width, int* h
         int maskStride = (info.bih.biWidth + 31) / 32 * 4;
         *width = info.bih.biWidth;
         *height = info.bih.biHeight;
-        std::shared_ptr<U8[]> result = std::make_shared<U8[]>(info.bih.biWidth * info.bih.biHeight * 4);
+        std::shared_ptr<U8[]> result = std::shared_ptr<U8[]>(new U8[info.bih.biWidth * info.bih.biHeight * 4], std::default_delete<U8[]>());
         U8* pResult = result.get();
         for (int y=0;y<info.bih.biHeight;y++) {
             for (int x=0;x<info.bih.biWidth;x++) {
@@ -421,7 +421,7 @@ std::shared_ptr<U8[]> parseIcon(BReadFile& f, IconInfo& info, int* width, int* h
         int maskStride = (info.bih.biWidth + 31) / 32 * 4;
         *width = info.bih.biWidth;
         *height = info.bih.biHeight;
-        std::shared_ptr<U8[]> result = std::make_shared<U8[]>(info.bih.biWidth * info.bih.biHeight * 4);
+        std::shared_ptr<U8[]> result = std::shared_ptr<U8[]>(new U8[info.bih.biWidth * info.bih.biHeight * 4], std::default_delete<U8[]>());
         U8* pResult = result.get();
         for (int y = 0; y < info.bih.biHeight; y++) {
             for (int x = 0; x < info.bih.biWidth; x++) {
