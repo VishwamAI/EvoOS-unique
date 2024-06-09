@@ -1,0 +1,32 @@
+# Requirements and dependencies for AI OS features
+
+# General dependencies
+ubuntu-22.04
+
+# AI and automation tools
+python3
+python3-pip
+tensorflow
+torch
+transformers
+
+# Terminal automation and auto-completion
+zsh
+oh-my-zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
+
+# Compressed LLMs
+sentence-transformers
+
+# Custom tools for handling .exe, .deb, .dmg, and .apk files
+wine
+custom-tool-exe
+custom-tool-deb
+custom-tool-dmg
+custom-tool-apk
+
+# Unique designs and icons
+gnome-tweaks
+gnome-shell-extensions
+papirus-icon-theme
