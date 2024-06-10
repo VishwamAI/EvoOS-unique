@@ -1,10 +1,10 @@
-# AIOS Setup and Usage Guide
+# EvoOS Setup and Usage Guide
 
-## Introduction to AIOS
-AIOS (Artificial Intelligence Operating System) is a customized operating system built on Ubuntu 22.04 LTS with integrated AI functionalities. It automates tasks based on given prompts, including opening the terminal, performing web searches, and more. AIOS is designed to be an advanced and precise system that can understand and complete tasks based on single English command lines.
+## Introduction to EvoOS
+EvoOS (Artificial Intelligence Operating System) is a customized operating system built on Ubuntu 22.04 LTS with integrated AI functionalities. It automates tasks based on given prompts, including opening the terminal, performing web searches, and more. EvoOS is designed to be an advanced and precise system that can understand and complete tasks based on single English command lines.
 
 ## Installation Instructions
-1. **Download the AIOS ISO File:**
+1. **Download the EvoOS ISO File:**
    - Ensure you have the `aios.iso` file available. If not, download it from the provided source.
 
 2. **Create a Bootable USB Drive:**
@@ -15,17 +15,17 @@ AIOS (Artificial Intelligence Operating System) is a customized operating system
    - Enter the BIOS/UEFI settings (usually by pressing a key like F2, F12, DEL, or ESC during startup) and set the USB drive as the primary boot device.
    - Save the changes and exit the BIOS/UEFI settings. Your computer should now boot from the USB drive.
 
-4. **Install AIOS:**
-   - Follow the on-screen instructions to install AIOS on your computer. The installation process is similar to that of Ubuntu 22.04 LTS.
+4. **Install EvoOS:**
+   - Follow the on-screen instructions to install EvoOS on your computer. The installation process is similar to that of Ubuntu 22.04 LTS.
 
-## Getting Started with AIOS
+## Getting Started with EvoOS
 1. **Log In:**
-   - After installation, log in to your AIOS system using the credentials you created during the installation process.
+   - After installation, log in to your EvoOS system using the credentials you created during the installation process.
 
-2. **Explore the AIOS Desktop:**
-   - The AIOS desktop environment is based on GNOME, with custom branding and features. Take some time to explore the desktop and familiarize yourself with the layout.
+2. **Explore the EvoOS Desktop:**
+   - The EvoOS desktop environment is based on GNOME, with custom branding and features. Take some time to explore the desktop and familiarize yourself with the layout.
 
-## Using the AIOS Task Automation Features
+## Using the EvoOS Task Automation Features
 1. **Task Automation Script:**
    - The `aios_task_automation.sh` script is located in the `/home/ubuntu` directory. This script uses an NLP model to interpret and execute English command lines.
 
@@ -45,16 +45,16 @@ AIOS (Artificial Intelligence Operating System) is a customized operating system
 
 4. **Example Commands:**
    - "Open the terminal"
-   - "Search for AIOS documentation"
+   - "Search for EvoOS documentation"
    - "Show system information"
 
 ## Troubleshooting and Support
 1. **Common Issues:**
-   - If you encounter any issues during installation or usage, refer to the official AIOS documentation and support forums for assistance.
+   - If you encounter any issues during installation or usage, refer to the official EvoOS documentation and support forums for assistance.
 
 2. **Contact Support:**
-   - For further support, contact the AIOS support team via the provided contact information.
+   - For further support, contact the EvoOS support team via the provided contact information.
 
 ---
 
-This guide provides an overview of the setup and usage of AIOS. For more detailed information and advanced usage, refer to the official AIOS documentation.
+This guide provides an overview of the setup and usage of EvoOS. For more detailed information and advanced usage, refer to the official EvoOS documentation.

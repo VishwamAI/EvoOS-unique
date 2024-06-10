@@ -1,7 +1,7 @@
-# AIOS Setup and Usage Instructions
+# EvoOS Setup and Usage Instructions
 
 ## Introduction
-This document provides instructions for setting up, configuring, and using the Artificial Intelligence Operating System (AIOS). The AIOS is designed to automate tasks based on given prompts, search the web using browsers like Google Chrome or Edge, update and code itself, and maintain user confidentiality.
+This document provides instructions for setting up, configuring, and using the Artificial Intelligence Operating System (EvoOS). The EvoOS is designed to automate tasks based on given prompts, search the web using browsers like Google Chrome or Edge, update and code itself, and maintain user confidentiality.
 
 ## Prerequisites
 - A machine with x86 architecture
@@ -48,7 +48,7 @@ This document provides instructions for setting up, configuring, and using the A
    xhost +local:
    ```
 
-## Using the AIOS Automation Scripts
+## Using the EvoOS Automation Scripts
 1. **aios_llm_automation.sh:**
    This script automates tasks using a compressed language model. It takes a command as an argument, generates a response using the language model, validates that the response is a valid shell command, and then executes it.
 
@@ -78,8 +78,8 @@ This document provides instructions for setting up, configuring, and using the A
 - **GPU Process Errors:**
   If you encounter errors related to the GPU process when running GUI applications, try running the application in headless mode or ensure that your environment has proper GPU support.
 
-## Testing the AIOS
-To test the AIOS for functionality and performance, perform a series of actions that simulate typical user interactions with the system. This includes executing commands through the `aios_llm_automation.sh` script, performing web searches, and opening GUI applications.
+## Testing the EvoOS
+To test the EvoOS for functionality and performance, perform a series of actions that simulate typical user interactions with the system. This includes executing commands through the `aios_llm_automation.sh` script, performing web searches, and opening GUI applications.
 
 **Example Test:**
 ```bash
@@ -87,7 +87,7 @@ To test the AIOS for functionality and performance, perform a series of actions 
 ```
 
 ## Conclusion
-By following these instructions, you should be able to set up, configure, and use the AIOS effectively. If you encounter any issues, refer to the troubleshooting section for guidance.
+By following these instructions, you should be able to set up, configure, and use the EvoOS effectively. If you encounter any issues, refer to the troubleshooting section for guidance.
 
 # Boxedwine
 Boxedwine is an emulator that runs Windows applications.  It achieves this by running a 32-bit version of Wine, and emulating the Linux kernel and CPU.  It is written in C++ with SDL and is supported on multiple platforms.
